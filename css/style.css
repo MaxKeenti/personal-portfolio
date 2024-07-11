@@ -1,0 +1,195 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    --bg-color: #222631;
+    --link-color: #edf2f4;
+    --bg-menu-color: #101119;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    overflow: auto;
+    color: var(--link-color);
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu {
+    background-color: var(--bg-menu-color) !important;
+    bottom: 0%;
+    height: 10%;
+    width: 100%;
+    padding-left: 1rem;
+
+    /* Responsive attributes */
+
+    display: flex;
+    /* Makes the div a flexible one */
+    justify-content: space-between;
+    /* Makes objects have an equal amount of space between them */
+    align-items: center;
+    /* Makes all items inside a div to be aligned vertically in the center */
+    position: fixed;
+    /* Makes the div keep its position throughout the whole app */
+    top: 0;
+    /* Places the position of the fixed item to the top */
+
+    .menu__header {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo-maxkeenti {
+        width: 20%;
+        display: flex;
+        height: 4rem;
+        width: 4rem;
+        cursor: pointer;
+    }
+
+    .menu__title {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header_container {
+        width: 70%;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .menu__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+    }
+}
+
+/*Sección Title*/
+
+section.title {
+    padding-top: 10%;
+
+    .title__div {
+        /* Responsive attributes */
+
+        display: flex;
+        /* Makes the div a flexible one */
+        justify-content: space-between;
+        /* Makes objects have an equal amount of space between them */
+        align-items: center;
+        /* Makes all items inside a div to be aligned vertically in the center */
+    }
+
+    .title__profile {
+        display: flex;
+        border-radius: 50%;
+        width: 10%;
+        height: 10%;
+    }
+}
+
+/*Sección About*/
+
+section.about {}
+
+/*Sección Hobbies*/
+
+section.hobbies {}
+
+/* Experiencia Académica*/
+
+section.academic {}
+
+/* experiencia*/
+
+section.experience {}
+
+/*Contacto*/
+
+section.formcontato {}
+
+/*footeer*/
+
+section.footer {}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menú */
+
+    /*title*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+
+    /*Titulo*/
+
+    /*Sección sobre mi*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+    /*Contacto*/
+
+    /*Footer*/
+
+}
